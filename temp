@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+out = open('temp.txt', 'w')
+print('apple', file=out)
+print('pear', file=out)
+print('orange', file=out)
+out.close()
+inp = open('temp.txt', 'r')
+print(inp.readline())
+inp.close()
+
